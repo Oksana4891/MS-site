@@ -447,6 +447,7 @@ ul {
     padding: 30px;
     max-height: 100vh;
     max-width: 90vw;
+    object-fit: cover;
   }
 
 .lightbox.is-open .lightbox__content {

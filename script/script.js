@@ -78,6 +78,7 @@ function lightbox(
 
     function handleOpenModal(event) {
       event.preventDefault();
+      document.body.style.overflow = "hidden";
       let img = smallImgs[i];
       modal.classList.add("is-open");
       modalImage.alt = img.alt;
@@ -91,6 +92,7 @@ function lightbox(
   // Close Modal
 
   function handleCloseModal() {
+    document.body.style.overflow = "";
     modalImage.alt = "";
     modalImage.src = "";
     modal.classList.remove("is-open");
