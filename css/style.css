@@ -442,11 +442,11 @@ ul {
   }
   
   .lightbox__image {
-    width: auto;
-    height: auto;
+    min-width: 80vw;
+    min-height: 80vh;
     padding: 30px;
-    max-height: 85vh;
-    max-width: 85vw;
+    max-height: 100vh;
+    max-width: 90vw;
   }
 
 .lightbox.is-open .lightbox__content {
