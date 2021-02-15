@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    overflow-y: hidden;
     font-family: "Lato", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 18px;
@@ -672,6 +673,7 @@ footer i, .fa-angle-double-right {
 
 /* ----------screen - max-width 992 --------*/
 
+
 @media screen and (max-width: 992px) {
     /* -----Burger icon------ */
     .burger {
@@ -742,7 +744,7 @@ footer i, .fa-angle-double-right {
     /* Contact bottom icon */
     .contact-btn {
         position: fixed;
-        right: 4px;
+        right: 10px;
         top: 4px;
         display: inline-block;
         z-index: 1000;
@@ -806,7 +808,7 @@ footer i, .fa-angle-double-right {
     .page-header_contact {
         display: block;
         position: fixed;
-        right: 4px;
+        right: 20px;
         top: 64px;
         transform: translateX(-10px);
         padding: 15px 10px;
@@ -947,7 +949,7 @@ footer i, .fa-angle-double-right {
         right: 20px;
         top: 30px;
     }
-
+}
 /* ------------screen max-width 768 ---------*/
 
 @media screen and (max-width: 768px) {
