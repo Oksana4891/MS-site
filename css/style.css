@@ -10,7 +10,6 @@ html {
 }
 
 body {
-    overflow-x: hidden;
     font-family: "Lato", Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 18px;
@@ -123,6 +122,7 @@ ul {
 /* Contact-block */
 
 .page-header_contact {
+    overflow-x: hidden;
     background-color: #29293a;
     color: #fff;
 }
@@ -299,6 +299,7 @@ ul {
 /* SECTION Services */
 
 .section-services {
+    overflow-x: hidden;
     padding: 80px 0px;
 }
 
@@ -477,6 +478,7 @@ ul {
 /* FOOTER*/
 
 .footer {
+    overflow-x: hidden;
     background-color: #29293a;
     color: #b3bec5;
     padding-top: 100px;
@@ -548,7 +550,6 @@ footer i, .fa-angle-double-right {
 }
 
 .footer_item {
-    padding-left: 30px;
     margin-bottom: 50px;
 }
 
