@@ -33,7 +33,6 @@ const menuItems = document.querySelectorAll(".js-menuItems");
 menuItems.forEach((item) => {
   item.addEventListener("click", (e) => {
     if (e.target.classList.contains("navbar_center_menu-link")) {
-      e.preventDefault();
       item.classList.toggle("is-open");
     } else {
       return;
