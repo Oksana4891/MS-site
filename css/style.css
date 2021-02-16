@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Oswald:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/LotoReg.ttf")
+        format("ttf"),
+  }
+  
+
+
 
 /* BASE */
 
@@ -203,10 +212,12 @@ ul {
 
 .navbar_center_menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.navbar_center_menu-item {
+.navbar_center_menu-item {  
   position: relative;
+  white-space: nowrap;
   margin: 0 22px;
   padding: 25px 0px;
 }
