@@ -133,13 +133,7 @@ ul {
 /* HEADER */
 
 /* Contact-block */
-.page-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 2000;
-}
+
 
 .page-header_contact {
   overflow-x: hidden;
@@ -1007,7 +1001,14 @@ footer i,
   }
 }
 
-/* ____________PAGE ABOUT________________ */
+/* ____________PAGE ABOUT__________________________ */
+
+.page-about_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
 .page-about_navbar {
   background-image: linear-gradient(135deg, #030a6e 59%, #080ab4 100%);
@@ -1018,7 +1019,7 @@ footer i,
 }
 
 .section-wrapper {
-  padding-top: 125px;
+  padding-top: 300px;
   padding-bottom: 125px;
 }
 
@@ -1132,7 +1133,6 @@ footer i,
   }
 
   .section-wrapper {
-    padding-top: 100px;
     padding-bottom: 100px;
   }
 
@@ -1191,7 +1191,11 @@ footer i,
     background-color: white;
   }
   .page-about_navbar .navbar_center_menu-link {
-    color: #333333;}
+    color: #333333;
+}
+    .section-wrapper {
+        padding-top: 150px;
+    }
 }
 
 @media screen and (max-width: 767px) {
