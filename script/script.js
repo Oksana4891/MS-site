@@ -43,11 +43,11 @@ menuItems.forEach((item) => {
 
 // Slider SWIPER
 
-const swiper = new Swiper(".swiper-container", {
+const swiper = new Swiper(".js-main-slider", {
   spaceBetween: 30,
   effect: "fade",
   autoplay: {
-    delay:5000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -55,6 +55,20 @@ const swiper = new Swiper(".swiper-container", {
     clickable: true,
   },
 });
+
+const swiperAbout = new Swiper(".js-about-slider", {
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 
 // -------------LIGHTBOX----------
 
