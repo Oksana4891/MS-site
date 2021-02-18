@@ -1,383 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <!-- Stylesheets-->
-  <link rel="stylesheet" type="text/css"
-    href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900" />
-  <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/icon.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <header class="page-header">
-    <!-- Burger button -mobile -->
-    <div class="burger" id="burger">
-      <div class="burger-icon"></div>
-    </div>
-    <!-- /Burger button     -->
-    <!-- Contact button -mobile -->
-    <div class="contact-btn" id="contact-btn">
-      <div class="contact-btn-icon"></div>
-    </div>
-    <!-- /Contact button -mobile -->
-    <div class="page-header_contact js-contact-block">
-      <div class="page-header_wrapper">
-        <ul class="page-header_contact-list contact-list">
-          <li>
-            <i class="fas fa-phone-alt"></i>
-            <a class="page-header_contact-link" href="tel:#">1-800-0000-000,</a>
-            <a class="page-header_contact-link" href="tel:#">1-800-0000-000</a>
-          </li>
-          <li>
-            <i class="fas fa-map-marker-alt"></i>
-            <a class="page-header_contact-link" href="#">
-              Воронеж, пр.Труда, 65K</a>
-          </li>
-          <li>
-            <i class="far fa-envelope"></i>
-            <a class="page-header_contact-link" href="mailto:#">ms-autotech@ya.ru</a>
-          </li>
-        </ul>
-        <ul class="page-header_contact-list social-list">
-          <li>
-            <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a class="social-link" href="#"><i class="fab fa-google-plus-g"></i></a>
-          </li>
-          <li>
-            <a class="social-link" href="#"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-        </ul>
-        <button class="main-btn btn-color mobile-btn">Book</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Stylesheets-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Swiper Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/icon.css" />
+    <!--Main style  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <!-- Burger button -mobile -->
+      <div class="burger" id="burger">
+        <div class="burger-icon"></div>
       </div>
-    </div>
-    <div class="page-header_navbar">
-      <div class="page-header_wrapper">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/logo.jpg" alt="" width="143" height="36" />
-          </a>
+      <!-- END Burger button     -->
+      <!-- Contact button -mobile -->
+      <div class="contact-btn" id="contact-btn">
+        <div class="contact-btn-icon"></div>
+      </div>
+      <!-- END Contact button -mobile -->
+      <div class="page-header_contact js-contact-block">
+        <div class="page-header_wrapper">
+          <ul class="page-header_contact-list contact-list">
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <a class="page-header_contact-link" href="tel:#"
+                >1-800-0000-000,</a
+              >
+              <a class="page-header_contact-link" href="tel:#"
+                >1-800-0000-000</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <a class="page-header_contact-link" href="#">
+                Воронеж, пр.Труда, 65K</a
+              >
+            </li>
+            <li>
+              <i class="far fa-envelope"></i>
+              <a class="page-header_contact-link" href="mailto:#"
+                >ms-autotech@ya.ru</a
+              >
+            </li>
+          </ul>
+          <ul class="page-header_contact-list social-list">
+            <li>
+              <a class="social-link" href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"
+                ><i class="fab fa-google-plus-g"></i
+              ></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+          </ul>
+          <button class="main-btn btn-color mobile-btn">Book</button>
         </div>
-        <div class="navbar_center js-navbar">
-          <nav>
-            <ul class="navbar_center_menu">
-              <li class="navbar_center_menu-item js-menuItems">
-                <a class="navbar_center_menu-link" href="index.html">Главная</a>
+      </div>
+      <div class="page-header_navbar">
+        <div class="page-header_wrapper">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.jpg" alt="" width="143" height="36" />
+            </a>
+          </div>
+          <div class="navbar_center js-navbar">
+            <nav>
+              <ul class="navbar_center_menu">
+                <li class="navbar_center_menu-item js-menuItems">
+                  <a class="navbar_center_menu-link" href="index.html"
+                    >Главная</a
+                  >
+                </li>
+                <li class="navbar_center_menu-item js-menuItems">
+                  <a class="navbar_center_menu-link" href="about.html"
+                    >О компании</a
+                  >
+                </li>
+                <li class="navbar_center_menu-item js-menuItems">
+                  <a class="navbar_center_menu-link" href="#">Наши работы</a>
+                  <span class="navbar_center_icon"></span>
+                </li>
+                <li class="navbar_center_menu-item js-menuItems">
+                  <a class="navbar_center_menu-link" href="#">Блог</a>
+                  <span class="navbar_center_icon"></span>
+                  <ul class="navbar_center-submenu">
+                    <li>
+                      <ul class="navbar_center-submenu--item">
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="about-me.html">About Me</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="our-history.html">Our History</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="services.html">Services</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="single-service.html">Single Service</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="careers.html">Careers</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar_center_menu-item js-menuItems">
+                  <a class="navbar_center_menu-link" href="#">Контакты</a>
+                  <span class="navbar_center_icon"></span>
+                  <ul class="navbar_center-submenu">
+                    <li>
+                      <ul class="navbar_center-submenu--item">
+                        <li>
+                          <i class="fas fa-arrow-right"></i>
+                          <a href="about-me.html">About Me</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i>
+                          <a href="our-history.html">Our History</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="services.html">Services</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="single-service.html">Single Service</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="careers.html">Careers</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li></li>
+                    <li>
+                      <ul class="navbar_center-submenu--item">
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="503-page.html">503 Page</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="coming-soon.html">Coming Soon</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="under-construction.html"
+                            >Under Construction</a
+                          >
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="accordions.html">Accordions</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="forms.html">Forms</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul class="navbar_center-submenu--item">
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="countdown.html">Countdown</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="grid-system.html">Grid System</a>
+                        </li>
+                        <li>
+                          <i class="fas fa-arrow-right"></i
+                          ><a href="tables.html">Tables</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar_center_menu-item js-menuItems">
+                  <a class="navbar_center_menu-link" href="#">Обратная звязь</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="navbar_rigth">
+            <button class="main-btn btn-color">Book</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Slides -->
+      <section class="section-slider">
+        <div class="swiper-container js-main-slider">
+          <!-- swiper slider -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="section-slider_img" src="images/slider1.jpg" alt="" />
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="section-slider_text-block col-10 col-md-6 col-lg-4"
+                  >
+                    <h2 class="section-slider_text-block--title">
+                      Lorem ipsum dolor
+                    </h2>
+                    <p class="section-slider_text-block--text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <button
+                      class="main-btn transparent-btn section-slider_text-block--btn"
+                    >
+                      learn more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="section-slider_img" src="images/slider2.jpg" alt="" />
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="section-slider_text-block col-10 col-md-6 col-lg-4"
+                  >
+                    <h2 class="section-slider_text-block--title">
+                      Lorem ipsum.
+                    </h2>
+                    <p class="section-slider_text-block--text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                      adipisicing elit.
+                    </p>
+                    <button
+                      class="main-btn transparent-btn section-slider_text-block--btn"
+                    >
+                      learn more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="section-slider_img" src="images/slider3.jpg" alt="" />
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="section-slider_text-block col-10 col-md-6 col-lg-4"
+                  >
+                    <h2 class="section-slider_text-block--title">
+                      Lorem ipsum dolor
+                    </h2>
+                    <p class="section-slider_text-block--text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <button
+                      class="main-btn transparent-btn section-slider_text-block--btn"
+                    >
+                      learn more
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pagination -->
+          <div class="swiper-pagination">
+            <div class="container"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Section services -->
+      <section class="section-services container">
+        <h3 class="section-title">services</h3>
+        <div class="row">
+          <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
+            <div class="section-services_card">
+              <div class="section-services_card--img">
+                <img
+                  class="card-img js-smallImg"
+                  src="images/slider4.jpg"
+                  alt="card1"
+                  data-source="images/slider4.jpg"
+                />
+                <div class="section-services_card--overline">
+                  <div class="overline-icon js-lightboxOpen">
+                    <img src="images/zoom.svg" alt="zoom" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="section-subtitle" href="#" target="_blank"
+              >Ремонт и реставрация кожи</a
+            >
+          </div>
+          <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
+            <div class="section-services_card">
+              <div class="section-services_card--img">
+                <img
+                  class="card-img js-smallImg"
+                  src="images/slider5.jpg"
+                  alt="card1"
+                  data-source="images/slider5.jpg"
+                />
+                <div class="section-services_card--overline">
+                  <div class="overline-icon js-lightboxOpen">
+                    <img src="images/zoom.svg" alt="zoom" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="section-subtitle" href="#" target="_blank"
+              >Ремонт и реставрация кожи</a
+            >
+          </div>
+          <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
+            <div class="section-services_card">
+              <div class="section-services_card--img">
+                <img
+                  class="card-img js-smallImg"
+                  src="images/slider1.jpg"
+                  alt="card1"
+                  data-source="images/slider1.jpg"
+                />
+                <div class="section-services_card--overline">
+                  <div class="overline-icon js-lightboxOpen">
+                    <img src="images/zoom.svg" alt="zoom" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="section-subtitle" href="#" target="_blank"
+              >Ремонт и реставрация кожи</a
+            >
+          </div>
+        </div>
+        <!-- Модальное окно для полноразмерного изображения -->
+        <div class="lightbox js-lightbox">
+          <div class="lightbox__overlay"></div>
+          <div class="lightbox__content">
+            <div class="container_img">
+              <img class="lightbox__image" src="" alt="" />
+              <span class="lightbox_close js-lightboxClose">х</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div
+            class="footer_item col-11 offset-1 col-md-6 offset-md-0 col-lg-3 col-xl-4"
+          >
+            <a href="index.html"> <img src="images/logo.jpg" alt="logo" /></a>
+            <p class="footer_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              explicabo delectus minus, veniam, itaque velit, ex incidunt
+              facilis quas esse optio voluptas iure impedit soluta enim fuga
+              architecto minima eligendi?
+            </p>
+            <div>
+              <i class="fas fa-phone-alt"></i>
+              <a class="footer_contact-link" href="tel:#">1-800-0000-000,</a>
+            </div>
+            <div>
+              <i class="far fa-envelope"></i>
+              <a class="footer_contact-link" href="mailto:#"
+                >ms-autotech@ya.ru</a
+              >
+            </div>
+          </div>
+          <div
+            class="footer_item col-11 offset-1 col-md-6 offset-md-0 col-lg-3 col-xl-3"
+          >
+            <div class="footer_subtitle">Quick Links</div>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-angle-double-right"></i
+                ><a href="#"> About Us</a>
               </li>
-              <li class="navbar_center_menu-item js-menuItems">
-                <a class="navbar_center_menu-link" href="about.html">О компании</a>
+              <li>
+                <i class="fas fa-angle-double-right"></i
+                ><a href="#">Our Services</a>
               </li>
-              <li class="navbar_center_menu-item js-menuItems">
-                <a class="navbar_center_menu-link" href="#">Наши работы</a>
-                <span class="navbar_center_icon"></span>
+              <li>
+                <i class="fas fa-angle-double-right"></i
+                ><a href="#">How It Works</a>
               </li>
-              <li class="navbar_center_menu-item js-menuItems">
-                <a class="navbar_center_menu-link" href="#">Блог</a>
-                <span class="navbar_center_icon"></span>
-                <ul class="navbar_center-submenu">
-                  <li>
-                    <ul class="navbar_center-submenu--item">
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="about-me.html">About Me</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="our-history.html">Our History</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="services.html">Services</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="single-service.html">Single Service</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="careers.html">Careers</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+              <li>
+                <i class="fas fa-angle-double-right"></i
+                ><a href="#">Blogs &amp; News</a>
               </li>
-              <li class="navbar_center_menu-item js-menuItems">
-                <a class="navbar_center_menu-link" href="#">Контакты</a>
-                <span class="navbar_center_icon"></span>
-                <ul class="navbar_center-submenu">
-                  <li>
-                    <ul class="navbar_center-submenu--item">
-                      <li>
-                        <i class="fas fa-arrow-right"></i>
-                        <a href="about-me.html">About Me</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i>
-                        <a href="our-history.html">Our History</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="services.html">Services</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="single-service.html">Single Service</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="careers.html">Careers</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li></li>
-                  <li>
-                    <ul class="navbar_center-submenu--item">
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="503-page.html">503 Page</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="coming-soon.html">Coming Soon</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="under-construction.html">Under Construction</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="accordions.html">Accordions</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="forms.html">Forms</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="navbar_center-submenu--item">
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="countdown.html">Countdown</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="grid-system.html">Grid System</a>
-                      </li>
-                      <li>
-                        <i class="fas fa-arrow-right"></i><a href="tables.html">Tables</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+              <li>
+                <i class="fas fa-angle-double-right"></i
+                ><a href="#">Contact Us</a>
               </li>
-              <li class="navbar_center_menu-item js-menuItems">
-                <a class="navbar_center_menu-link" href="#">Обратная звязь</a>
+              <li>
+                <i class="fas fa-angle-double-right"></i><a href="#">Faq</a>
               </li>
             </ul>
-          </nav>
-        </div>
-        <div class="navbar_rigth">
-          <button class="main-btn btn-color">Book</button>
+          </div>
+          <div
+            class="footer_item col-11 offset-1 col-md-6 offset-md-0 col-lg-3 col-xl-3"
+          >
+            <div class="footer_subtitle">Our Services</div>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-angle-double-right"></i
+                ><a href="#">Services 1</a>
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i
+                ><a href="#">Services 2</a>
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i
+                ><a href="#">Services 3</a>
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i
+                ><a href="#">Services 4</a>
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i
+                ><a href="#">Services 5</a>
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i
+                ><a href="#">Services 6</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_item col-md-6 col-lg-3 col-xl-2">
+            <button class="main-btn btn-color footer_btn">Book</button>
+            <button class="main-btn transparent-btn footer_btn">
+              learn more
+            </button>
+            <button class="main-btn transparent-btn footer_btn">
+              learn more
+            </button>
+            <ul class="footer_social-list">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright">© Brush Sharp 2020 Allright Reserved</div>
         </div>
       </div>
-    </div>
-  </header>
-  <main>
-    <!-- Slides -->
-    <section class="section-slider">
-      <div class="swiper-container js-main-slider">
-        <!-- swiper slider -->
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img class="section-slider_img" src="images/slider1.jpg" alt="" />
-            <div class="container">
-              <div class="row">
-                <div class="section-slider_text-block col-10 col-md-6 col-lg-4">
-                  <h2 class="section-slider_text-block--title">
-                    Lorem ipsum dolor
-                  </h2>
-                  <p class="section-slider_text-block--text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </p>
-                  <button class="main-btn transparent-btn section-slider_text-block--btn">
-                    learn more
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img class="section-slider_img" src="images/slider2.jpg" alt="" />
-            <div class="container">
-              <div class="row">
-                <div class="section-slider_text-block col-10 col-md-6 col-lg-4">
-                  <h2 class="section-slider_text-block--title">
-                    Lorem ipsum.
-                  </h2>
-                  <p class="section-slider_text-block--text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                    adipisicing elit.
-                  </p>
-                  <button class="main-btn transparent-btn section-slider_text-block--btn">
-                    learn more
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img class="section-slider_img" src="images/slider3.jpg" alt="" />
-            <div class="container">
-              <div class="row">
-                <div class="section-slider_text-block col-10 col-md-6 col-lg-4">
-                  <h2 class="section-slider_text-block--title">
-                    Lorem ipsum dolor
-                  </h2>
-                  <p class="section-slider_text-block--text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </p>
-                  <button class="main-btn transparent-btn section-slider_text-block--btn">
-                    learn more
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- pagination -->
-        <div class="swiper-pagination">
-          <div class="container"></div>
-        </div>
-      </div>
-    </section>
-    <!-- Section services -->
-    <section class="section-services container">
-      <h3 class="section-title">services</h3>
-      <div class="row">
-        <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
-          <div class="section-services_card">
-            <div class="section-services_card--img ">
-              <img class="card-img js-smallImg" src="images/slider4.jpg" alt="card1" data-source="images/slider4.jpg" />
-              <div class="section-services_card--overline">
-                <div class="overline-icon js-lightboxOpen">
-                  <img src="images/zoom.svg" alt="zoom" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="section-subtitle" href="#" target="_blank">Ремонт и реставрация кожи</a>
-        </div>
-        <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
-          <div class="section-services_card">
-            <div class="section-services_card--img">
-              <img class="card-img js-smallImg" src="images/slider5.jpg" alt="card1" data-source="images/slider5.jpg" />
-              <div class="section-services_card--overline">
-                <div class="overline-icon js-lightboxOpen">
-                  <img src="images/zoom.svg" alt="zoom" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="section-subtitle" href="#" target="_blank">Ремонт и реставрация кожи</a>
-        </div>
-        <div class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
-          <div class="section-services_card">
-            <div class="section-services_card--img">
-              <img class="card-img js-smallImg" src="images/slider1.jpg" alt="card1" data-source="images/slider1.jpg" />
-              <div class="section-services_card--overline">
-                <div class="overline-icon js-lightboxOpen">
-                  <img src="images/zoom.svg" alt="zoom" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="section-subtitle" href="#" target="_blank">Ремонт и реставрация кожи</a>
-        </div>
-      </div>
-      <!-- Модальное окно для полноразмерного изображения -->
-      <div class="lightbox js-lightbox">
-        <div class="lightbox__overlay"></div>
-        <div class="lightbox__content">
-          <div class="container_img">
-            <img class="lightbox__image" src="" alt="" />
-            <span class="lightbox_close js-lightboxClose">х</span>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="footer_item col-11 offset-1  col-md-6 offset-md-0 col-lg-3 col-xl-4">
-          <a href="index.html"> <img src="images/logo.jpg" alt="logo"></a>
-          <p class="footer_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo delectus
-            minus, veniam, itaque velit, ex incidunt facilis quas esse optio voluptas iure impedit soluta enim fuga
-            architecto minima eligendi?</p>
-          <div>
-            <i class="fas fa-phone-alt"></i>
-            <a class="footer_contact-link" href="tel:#">1-800-0000-000,</a>
-          </div>
-          <div>
-            <i class="far fa-envelope"></i>
-            <a class="footer_contact-link" href="mailto:#">ms-autotech@ya.ru</a>
-          </div>
-        </div>
-        <div class="footer_item  col-11 offset-1  col-md-6 offset-md-0  col-lg-3 col-xl-3">
-          <div class="footer_subtitle">
-            Quick Links
-          </div>
-          <ul class="footer-links">
-            <li><i class="fas fa-angle-double-right"></i><a href="#"> About Us</a></li>
-            <li><i class="fas fa-angle-double-right"></i><a href="#">Our Services</a></li>
-            <li><i class="fas fa-angle-double-right"></i><a href="#">How It Works</a></li>
-            <li><i class="fas fa-angle-double-right"></i><a href="#">Blogs &amp; News</a></li>
-            <li><i class="fas fa-angle-double-right"></i><a href="#">Contact Us</a></li>
-            <li><i class="fas fa-angle-double-right"></i><a href="#">Faq</a></li>
-          </ul>
-        </div>
-        <div class="footer_item  col-11 offset-1  col-md-6 offset-md-0 col-lg-3 col-xl-3">
-          <div class="footer_subtitle">
-            Our Services
-          </div>
-          <ul class="footer-links">
-            <li><i class="fas fa-angle-double-right"></i><a href="#">Services 1</a></li>
-            <li><i class="fas fa-angle-double-right"></i><a href="#">Services 2</a></li>
-            <li><i class="fas fa-angle-double-right"></i><a href="#">Services 3</a></li>
-            <li><i class="fas fa-angle-double-right"></i><a href="#">Services 4</a></li>
-            <li><i class="fas fa-angle-double-right"></i><a href="#">Services 5</a></li>
-            <li><i class="fas fa-angle-double-right"></i><a href="#">Services 6</a></li>
-          </ul>
-        </div>
-        <div class="footer_item col-md-6 col-lg-3 col-xl-2">
-          <button class="main-btn btn-color footer_btn">Book</button>
-          <button class="main-btn transparent-btn footer_btn">learn more</button>
-          <button class="main-btn transparent-btn footer_btn">learn more</button>
-          <ul class="footer_social-list">
-            <li>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-google-plus-g"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="copyright">© Brush Sharp 2020 Allright Reserved</div>
-      </div>
-    </div>
-  </footer>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="script/script.js"></script>
-</body>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
 </html>

@@ -150,7 +150,15 @@ ul {
 /* HEADER */
 
 /* Contact-block */
-
+.page-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  height: 120px;
+}
 
 .page-header_contact {
   overflow-x: hidden;
@@ -158,6 +166,9 @@ ul {
   color: #fff;
 }
 
+.page-header_navbar {
+  background-color: white;
+}
 .page-header_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,15 +182,9 @@ ul {
   width: 100%;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 15px 30px;
+  padding: 10px 20px;
 }
 
-@media (min-width: 1600px) {
-  .page-header_wrapper {
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-}
 
 .page-header_contact i {
   color: #838386;
@@ -240,7 +245,7 @@ ul {
   position: relative;
   white-space: nowrap;
   margin: 0 22px;
-  padding: 25px 0px;
+  padding: 10px 0px;
 }
 
 .navbar_center_menu-link {
@@ -288,6 +293,10 @@ ul {
 }
 
 /* Slider block */
+
+.section-slider {
+  margin-top: 120px;
+}
 
 .section-slider_img {
   width: 100%;
@@ -698,15 +707,58 @@ footer i,
           animation: fadeIn 1s both 3s;
 }
 
-/* ------------screen min-1600  ----------- */
+/* -----------------MEDIA----------------------------------- */
+
 
 @media (min-width: 1600px) {
   .container {
     max-width: 90%;
+  } 
+  .page-header_wrapper {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+  .page-header_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /* -ms-flex-wrap: wrap;
+        flex-wrap: wrap; */
+  }
+
+  .navbar_center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; */
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .navbar_center_menu-item  {
+    margin: 0 20px;
   }
 }
 
-/*----------- screen min - 992px -----------*/
+@media screen and (max-width: 1200px) {
+  .navbar_rigth {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 992px) {
   /* MENU */
@@ -796,43 +848,6 @@ footer i,
     display: none;
   }
 }
-
-/* ----------screen - max-width 1400 --------*/
-@media screen and (max-width: 1400px) {
-  .page-header_wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .navbar_center {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .navbar_center_menu-item  {
-    margin: 0 20px;
-  }
-}
-
-/* ----------screen - max-width 992 --------*/
 
 @media screen and (max-width: 992px) {
   /* -----Burger icon------ */
@@ -1164,8 +1179,11 @@ footer i,
     right: 20px;
     top: 30px;
   }
+
+  .section-slider {
+    margin-top: 0px;
 }
-/* ------------screen max-width 768 ---------*/
+}
 
 @media screen and (max-width: 768px) {
   .section-slider_text-block {
@@ -1176,6 +1194,10 @@ footer i,
     min-height: calc(100vh - 60px);
   }
 }
+
+
+/* ____________END MAIN STYLE_____________________ */
+
 
 /* ____________PAGE ABOUT__________________________ */
 
@@ -1197,7 +1219,7 @@ footer i,
 }
 
 .section-wrapper {
-  padding-top: 300px;
+  padding-top: 200px;
   padding-bottom: 125px;
 }
 
@@ -1408,6 +1430,7 @@ footer i,
   }
 
   .content-box {
+    padding-top: 40px;
     margin: 0;
     -webkit-columns: 1;
        -moz-columns: 1;
@@ -1442,3 +1465,5 @@ footer i,
     margin-bottom: 0px;
   }
 }
+
+

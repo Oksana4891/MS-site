@@ -41,6 +41,7 @@ menuItems.forEach((item) => {
 });
 
 // Slider SWIPER
+// MAIN SLIDER index.html
 
 const swiper = new Swiper(".js-main-slider", {
   spaceBetween: 30,
@@ -54,6 +55,8 @@ const swiper = new Swiper(".js-main-slider", {
     clickable: true,
   },
 });
+
+// // SLIDER page about.html
 
 const swiperAbout = new Swiper(".js-about-slider", {
   spaceBetween: 30,
